@@ -1,0 +1,38 @@
+/* MENSAGEM DE ERRO-GERAL*/
+.erro-geral {
+  background: #c82a2a;
+  color: white;
+  font-weight: bold;
+  padding: 14.5px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* ERRO PARA BORDA DOS CAMPOS INPUT */
+.erro-borda {
+  border: 1.6px solid #e92424e9;
+}
+
+/* ----------------------------
+   MENSAGEM DE VALIDAÇÃO ESPECÍFICA ABAIXO DOS INPUTS
+----------------------------- */
+.erro-validacao {
+  text-align: center;
+  margin-bottom: 7.5px;
+  margin-top: -7.5px;
+  font-size: 14.7px;
+  font-weight: bold;
+  color: #e92424e9;
+}
+
+/* MENSAGEM DE SUCESSO */
+.sucesso {
+  background: #1daa5f;
+  color: white;
+  font-weight: bold;
+  padding: 14.5px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}

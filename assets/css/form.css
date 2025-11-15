@@ -1,0 +1,173 @@
+body {
+  background-color: #f0f9ff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins ", sans-serif;
+}
+
+/* CONTAINER PAI DO FORMULÁRIO */
+.aut-container {
+  background: #bae6fd80;
+  color: #0c4a6e;
+  text-align: center;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  max-width: 450px;
+  border: 1px solid #7dd3fc;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.9s ease-out;
+}
+
+/* ANIMACAO DE ENTRADA DO FORMULARIO */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TITULO DO FORMULARIO */
+.aut-container h3 {
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  color: #0c4a6e;
+  letter-spacing: 0.5px;
+}
+
+/* CONTEUDO DIGITADO NOS CAMPOS COR AZUL */
+.aut-container input {
+  color: #2ea7db !important;
+}
+
+/* GARANTE QUE CONTINUE AZUL QUANDO FOCADO */
+.aut-container input:focus {
+  color: #2ea7db !important;
+}
+
+/* CONTAINER PAI DOS CAMPOS DO FORMULARIO */
+.input-group {
+  background: #ffffff;
+  margin-bottom: 1rem;
+  border: 1px solid #7dd3fc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* CONTAINER PAI DO FOMRULARIO QUANDO FOCADO */
+.input-group:focus-within {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+
+/* ICONE DOS CAMPOS INPUT */
+.input-group-text {
+  background: #e0f2fe;
+  border: none;
+  color: #0284c7;
+  font-size: 1.1rem;
+}
+
+/* CAMPO INPUT */
+.form-control {
+  background: transparent;
+  box-shadow: none;
+  color: #0c4a6e;
+  border: none;
+}
+
+/* CAMPO INPUT QUANDO FOCADO */
+.form-control:focus {
+  background: transparent;
+  box-shadow: none;
+  color: #0c4a6e;
+}
+
+/* LEGENDA DO CAMPO INPUT */
+.form-control::placeholder {
+  color: #0369a1;
+  opacity: 0.7;
+}
+
+/* BOTAO DO FORMULARIO */
+.btn-aut {
+  background-color: #38bdf8;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: #38bdf8;
+  color: #ffffff;
+  border: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
+}
+
+/* SOB O BOTAO DO FORMULARIO*/
+.btn-aut:hover {
+  background-color: #0ea5e9;
+  box-shadow: 0 6px 15px rgba(14, 165, 233, 0.4);
+  transform: scale(1.02);
+}
+
+/* DIV PAI DOS LINKS DO FORMULARIO */
+.aut-links {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* LINKS */
+.aut-links a {
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* SOB O LINK */
+.aut-links a:hover {
+  text-decoration: underline;
+}
+
+/* DIV PAI DO CHECKBOX */
+.form-check {
+  text-align: left;
+  margin-bottom: 0.8rem;
+  color: #0c4a6e;
+}
+
+/* INPUT DO CHECKBOX */
+.form-check-input {
+  border: 1.5px solid #7dd3fc;
+}
+
+/* CHECKBOX QUANDO ESTIVER MARCADO */
+.form-check-input:checked {
+  background-color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+/* CHEKBOX QUANDO ESTIVER FOCADO */
+.form-check-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.25);
+}
+
+/* LINKS DE PRIVACIDADE */
+.privacidade-link {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+/* SOB OS LINKS DE PRIVACIDADE */
+.privacidade-link:hover {
+  text-decoration: underline;
+}
