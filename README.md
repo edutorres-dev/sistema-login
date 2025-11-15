@@ -82,6 +82,7 @@ login(doc)/
     ├── css/form.css
     ├── lib/PHPMailer/
 ```
+> Os arquivos possuem comentários internos explicativos para compreensão da estrutura do código e funcionalidades .
 
 ---
 
@@ -94,17 +95,69 @@ login(doc)/
 - Apache
 - PhpMyAdmin
 
-### Instalação
+## ⚙️ Instalação e Configuração
 
-```
-C:\xampp\htdocs\login
-http://localhost/login
+### 1. Pré-requisitos
+
+- PHP 8+
+- MySQL 5.7+
+- Apache Web Server
+- PHPMailer (biblioteca)
+- Editor de código (VSCode recomendado)
+- PhpMyAdmin (opcional)
+
+> Para facilitar, use o [XAMPP](https://www.apachefriends.org/pt_br/index.html), que já vem com PHP, MySQL e Apache.
+
+---
+
+### 2. Instalação com XAMPP
+
+#### Windows
+
+1. Baixe o XAMPP e instale com Apache, MySQL, PHP e PhpMyAdmin.
+2. Copie o projeto para: `C:\xampp\htdocs\NomeDoProjeto`
+3. Inicie Apache e MySQL via XAMPP Control Panel
+4. Acesse: `http://localhost/NomeDoProjeto`
+
+#### Linux
+
+```bash
+# Baixe e instale o XAMPP
+wget https://www.apachefriends.org/xampp-files/8.2.4/xampp-linux-x64-8.2.4-0-installer.run
+chmod +x xampp-linux-*.run
+sudo ./xampp-linux-*.run
+sudo /opt/lampp/lampp start
+
+# Copie seu projeto para o diretório correto
+sudo mv bella-vitta /opt/lampp/htdocs/
+sudo chown -R $USER:$USER /opt/lampp/htdocs/bella-vitta
+
+# Acesse via navegador
+http://localhost/bella-vitta
 ```
 
-Configure o arquivo:
+#### macOS
 
-```
-assets/config/config.php
+1. Baixe o `.dmg` do XAMPP
+2. Instale e execute Apache/MySQL
+3. Copie o projeto para: `/Applications/XAMPP/htdocs/bella-vitta`
+4. Acesse: `http://localhost/bella-vitta`
+
+---
+
+### 3. Configuração do Projeto
+
+Edite `assets/config/config.php` com suas credenciais locais ou de produção:
+
+```php
+$modo = "local"; // ou "producao"
+
+if ($modo == "local") {
+    $servidor = "localhost";
+    $usuario = "root";
+    $senha = "";
+    $banco = "bella_vitta";
+}
 ```
 
 ---
