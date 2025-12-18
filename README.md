@@ -128,12 +128,6 @@ chmod +x xampp-linux-*.run
 sudo ./xampp-linux-*.run
 sudo /opt/lampp/lampp start
 
-# Copie seu projeto para o diretório correto
-sudo mv bella-vitta /opt/lampp/htdocs/
-sudo chown -R $USER:$USER /opt/lampp/htdocs/bella-vitta
-
-# Acesse via navegador
-http://localhost/bella-vitta
 ```
 
 #### macOS
